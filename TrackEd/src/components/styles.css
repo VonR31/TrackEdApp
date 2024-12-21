@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Form */
+
+/* Header and Footer */
+.header,
+.footer {
+  height: 95px;  /* Increased height to match image */
+  background-color: #880015;  /* Darker maroon to match image */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;  /* Lighter gray to match image */
+  padding: 180px;
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 445px;  /* Adjusted width to match image */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 55px;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #800000;  /* Darker maroon to match image */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #600000;
+}
+
+
+
+/* Home */
+.home {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;  /* Lighter gray to match image */
+  padding: 26.5rem;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #880015;
+  color: #fff;
+  padding: 1.4rem;
+}
+
+.navbar-left .logo img {
+  width: 145px;
+  height: 35px;
+}
+
+.menu {
+  color: #333;
+}
