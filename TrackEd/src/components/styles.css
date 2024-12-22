@@ -92,30 +92,6 @@ body {
 
 
 /* Home */
-.home {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;  /* Lighter gray to match image */
-  padding: 26.5rem;
-}
-
-.navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #880015;
+.sidebar {
   color: #fff;
-  padding: 1.4rem;
-}
-
-.navbar-left .logo img {
-  width: 145px;
-  height: 35px;
-}
-
-.menu {
-  color: #333;
 }
