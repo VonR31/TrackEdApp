@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Login Form */
+  
+  /* Header and Footer */
+  .header,
+  .footer {
+    height: 95px;  /* Increased height to match image */
+    background-color: #880015;  /* Darker maroon to match image */
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;  /* Lighter gray to match image */
+    padding: 180px;
+  }
+  
+  /* Login Card */
+  .login-card {
+    width: 100%;
+    max-width: 445px;  /* Adjusted width to match image */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 55px;
+  }
+  
+  .login-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Elements */
+  .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-input::placeholder {
+    color: #999;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000;  /* Darker maroon to match image */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #600000;
+  }
+  
+  
+  
+  /* Home */
+  .sidebar {
+    color: #fff;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .logo-icon {
+    width: 140px; /* Adjust width as needed */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no content spills out */
+  }
+  
+  .logo-icon img {
+    width: 100%; /* Makes the image fit the container width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible */
+  }
+  
+  .menu-bar {
+    height: 90vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+.toggle-theme-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.toggle {
+  margin-left: 15px;
+}
+
+.ant-card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 
+              0 1px 6px -1px rgba(0, 0, 0, 0.02), 
+              0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* List Styles */
+.ant-list-item {
+  padding: 12px 0;
+}
+
+.ant-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 4px !important;
+  font-weight: 500;
+}
+
+.ant-list-item-meta-description {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Tag Styles */
+.ant-tag {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+}
