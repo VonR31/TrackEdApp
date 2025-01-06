@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from 'antd';
 import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi';
 
-const ToggleThemeButton = ({ darkTheme,
+const ToggleThemeButton = ({ lightTheme,
     toggleTheme }) => {
     return (
     <div className="toggle-theme-btn">
         <Button onClick={toggleTheme}>
-        {darkTheme ? <HiOutlineSun /> :
-        <HiOutlineMoon />}
+        {lightTheme ? <HiOutlineMoon /> :
+        <HiOutlineSun />}
         </Button>
     </div>
     );

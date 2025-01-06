@@ -10,6 +10,12 @@ function LoginForm() {
 
   const navigate = useNavigate();
 
+  // Sample users with roles
+  const users = [
+    { email: 'admin@example.com', password: 'admin123', role: 'admin' },
+    { email: 'teacher@example.com', password: 'teacher123', role: 'teacher' },
+    { email: 'student@example.com', password: 'student123', role: 'student' }
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +28,27 @@ function LoginForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simulate login validation
-    if (formData.email && formData.password) {
-      console.log('Form submitted:', formData);
-      navigate('/home'); // Navigate to Home
+    const user = users.find(
+      user => user.email === formData.email && user.password === formData.password
+    );
+
+    if (user) {
+      console.log('Logged in as:', user.role);
+      switch (user.role) {
+        case 'admin':
+          navigate('/admin'); // Navigate to Admin dashboard
+          break;
+        case 'teacher':
+          navigate('/home'); // Navigate to Teacher dashboard
+          break;
+        case 'student':
+          navigate('/dashboard'); // Navigate to Student dashboard
+          break;
+        default:
+          alert('Invalid role!');
+      }
     } else {
-      alert('Please fill out both fields.');
+      alert('Invalid email or password.');
     }
   };
 

@@ -5,9 +5,9 @@ import {
     CalendarOutlined 
 } from '@ant-design/icons';
 
-const MenuList = ({ darkTheme }) => {
+const MenuList = ({ lightTheme }) => {
   return (
-    <Menu theme={darkTheme ? 'dark' : 'light'} 
+    <Menu theme={lightTheme ? 'light' : 'dark'} 
     mode="inline" 
     className="menu-bar">
       <Menu.Item key="home" icon={<HomeOutlined />}>
