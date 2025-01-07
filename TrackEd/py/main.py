@@ -87,7 +87,6 @@ async def create_qr(attendance:attendance,db: db_dependency):
         box_size=10,
         border=4,
     )
-
     qr.add_data(qr_name)
     qr.make(fit=True)
 
@@ -149,7 +148,7 @@ class CreateUserRequest(BaseModel):
     first_name: str
     last_name: str
     role: RoleType
-    username: str
+    username: str #email for the username
     password: str
 
 class Token(BaseModel):
